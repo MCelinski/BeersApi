@@ -1,0 +1,15 @@
+﻿using MediatR;
+
+namespace BeersApi.Logic.Brewery.Put
+{
+    public class PutBreweryRequest : IRequest<PutBreweryResponse>
+    {
+        public int Id { get; set; }
+
+        public string Name { get; set; }
+
+        public string City { get; set; }
+
+        public string Country { get; set; }
+    }
+}
